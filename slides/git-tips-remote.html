@@ -140,7 +140,7 @@
 
 				<section>
 					<section>
-						<h1>Log</h1>
+						<h1>History</h1>
 					</section>
 					<section>
 						<h2>Commit logs</h2>
@@ -153,6 +153,32 @@
 							The -p, --patch will show patches of each commit.<br/>
 							And -S will look for differences that introduce or remove an instance of string.<br/>
 							The --graph will draw the commit history.
+						</aside>
+					</section>
+					<section>
+						<h2>Blame</h2>
+						<ul>
+							<li><code>git blame -L &lt;n&gt;,&lt;m&gt; &lt;file&gt;</code></li>
+							<li><code>git blame -C &lt;file&gt;</code></li>
+						</ul>
+						<aside class="notes">
+							The -L will only annotate the given line range. (number, /regex/, +offset or -offset for &lt;m&gt;)<br/>
+							The -C detect lines moved or copied from other files.
+						</aside>
+					</section>
+					<section>
+						<h2>Binary search</h2>
+						<ul>
+							<li><code>git bisect start</code></li>
+							<li><code>git bisect bad</code></li>
+							<li><code>git bisect good &lt;commit&gt;</code></li>
+							<li><code>git bisect reset</code></li>
+						</ul>
+						<aside class="notes">
+							After doing "start, bad, good with good_commit", bisect will checked out the middle one for you.<br/>
+							Run test and tell bisect this commit is good or bad.<br/>
+							If bisect has enough info, it will tell you which commit is first bad commit.<br/>
+							Then you should run "reset" to reset the HEAD.
 						</aside>
 					</section>
 				</section>
@@ -241,7 +267,7 @@
 					<section>
 						<h2>Partially commit</h2>
 						<ul>
-							<li><code>git add --patch</code></li>
+							<li><code>git add --patch</code>, or <code>git add -i</code></li>
 							<li>edit the current hunk</li>
 							<li>check the partially staged part
 								<ul>
@@ -315,6 +341,42 @@
 
 				<section>
 					<section>
+						<h1>Stash</h1>
+					</section>
+					<section>
+						<h2>Stashing WIP work</h2>
+						<ul>
+							<li><code>git stash</code></li>
+							<li><code>git stash list</code></li>
+							<li><code>git stash apply --index &lt;stash&gt;</code></li>
+							<li><code>git stash pop &lt;stash&gt;</code></li>
+							<li><code>git stash branch &lt;branchname&gt; &lt;stash&gt;</code></li>
+							<li><code>git stash drop &lt;stash&gt;</code></li>
+						</ul>
+						<aside class="notes">
+							Stashing takes the dirty state of your working directory.<br/>
+							After stashing, you can easily switch branches and do work elsewhere; your changes are stored on your stack.<br/>
+							The "apply" command with a --index option to tell the command to try to reapply the staged changes.<br/>
+							The "pop" will apply stash and drop it from stack.<br/>
+							The "branch" will create a new branch, checkout the commit you were on when you stashed your work, reapplies your work there, and then drops the stash.
+						</aside>
+					</section>
+					<section>
+						<h2>Unapply</h2>
+						<ul>
+							<li><code>git stash show -p &lt;stash&gt; | git apply -R</code></li>
+							<li><code>git config --global alias.stash-unapply '!git stash show -p | git apply -R'</code></li>
+						</ul>
+						<aside class="notes">
+							Stashing takes the dirty state of your working directory.<br/>
+							After stashing, you can easily switch branches and do work elsewhere; your changes are stored on your stack.<br/>
+							The "apply" command with a --index option to tell the command to try to reapply the staged changes.
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
 						<h1>Patch</h1>
 					</section>
 					<section>
@@ -341,6 +403,19 @@
 							The "apply --check" will see if the patch is applicable to the current working tree.<br/>
 							For the patches which creating by "format-patch", please apply them by "am" command.
 						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Ignore</h1>
+					</section>
+					<section>
+						<h2>gitignore</h2>
+						<ul>
+							<li>{REPO}/.gitignore</li>
+							<li><code>git config --global core.excludesfile '~/.gitignore'</code></li>
+						</ul>
 					</section>
 				</section>
 
