@@ -351,6 +351,16 @@ For the patches which creating by "format-patch", please apply them by "am" comm
 
 ----
 
+# Github
+
+--
+
+## SSH Key
+
+* [Generating SSH keys for Github](https://help.github.com/articles/generating-ssh-keys)
+
+----
+
 ## Reference
 
 * Git Project [http://git-scm.com/](http://git-scm.com/)
