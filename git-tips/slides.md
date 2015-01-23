@@ -378,7 +378,7 @@ Notes: Fetch the branches and commits. Checkout to local-branch which you want t
 * `git push {remote-name} :{branch-name}`
 * `git remote prune {remote-name}`
 
-Note: The `git push {remote-name} {local-branch}:{branch-name}` will push the {local-branch} to {remote-name}, but it is renamed to {branch-name}. The `git remote prune` will deletes all stale remote-tracking branches under {remote-name}.
+Notes: The `git push {remote-name} {local-branch}:{branch-name}` will push the {local-branch} to {remote-name}, but it is renamed to {branch-name}. The `git remote prune` will deletes all stale remote-tracking branches under {remote-name}.
 
 ----
 
