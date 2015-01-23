@@ -359,6 +359,27 @@ For the patches which creating by "format-patch", please apply them by "am" comm
 
 * [Generating SSH keys for Github](https://help.github.com/articles/generating-ssh-keys)
 
+--
+
+## Syncing The Fork
+
+* `git fetch --all`
+* `git checkout {branch-name}`
+* `git pull`
+* `git merge {upstream-name}/{branch-name}`
+* `git push {fork-name}/{branch-name}`
+
+Notes: Fetch the branches and commits. Checkout to local-branch which you want to sync, then git pull to get it up-to-date. Merge from upstream, if local-branch didn't have any unique commits, it will fast-forward. Then push to your fork. 
+
+--
+
+## Delete the Remote Branch
+
+* `git push {remote-name} :{branch-name}`
+* `git remote prune {remote-name}`
+
+Note: The `git push {remote-name} {local-branch}:{branch-name}` will push the {local-branch} to {remote-name}, but it is renamed to {branch-name}. The `git remote prune` will deletes all stale remote-tracking branches under {remote-name}.
+
 ----
 
 ## Reference
