@@ -111,6 +111,7 @@ ex: "cd `git root`"
 	* format:{format}
 		* format:"The author of %h was %an, %ar%nTitle was >>%s<<%n"
 * `git log --oneline`
+* `git log --grep={pattern}`
 
 Notes: The -p, --patch will show patches of each commit.  
 The word-diff default is plain.  
@@ -379,6 +380,14 @@ Notes: Fetch the branches and commits. Checkout to local-branch which you want t
 * `git remote prune {remote-name}`
 
 Notes: The `git push {remote-name} {local-branch}:{branch-name}` will push the {local-branch} to {remote-name}, but it is renamed to {branch-name}. The `git remote prune` will deletes all stale remote-tracking branches under {remote-name}.
+
+--
+
+## Checkout PR Locally
+
+* `git fetch {remote-name} pull/{ID}/head:{branch-name}; git checkout {branch-name}`
+
+Notes: It will fetch the HEAD of pull request base on ID from remote repository, and create the new branch. Then we can switch to this branch.
 
 ----
 
