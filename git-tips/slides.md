@@ -385,7 +385,11 @@ Notes: The `git push {remote-name} {local-branch}:{branch-name}` will push the {
 
 ## Checkout PR Locally
 
-* `git fetch {remote-name} pull/{ID}/head:{branch-name}; git checkout {branch-name}`
+* `git fetch {remote-name} pull/{ID}/head:{branch-name} && git checkout {branch-name}`
+
+* External Alias
+  * `git config --global alias.pr '! git fetch ${1} pull/${2}/head:PR_${2} && git checkout PR_${2} #'`
+  * Then run `git pr mozilla 99` for fetching PR 99 from mozilla repo.
 
 Notes: It will fetch the HEAD of pull request base on ID from remote repository, and create the new branch. Then we can switch to this branch.
 
