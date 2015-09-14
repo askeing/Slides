@@ -14,9 +14,6 @@ Notes: For NCU Academy Program
     * `sudo apt-get install nodejs`
     * `sudo apt-get install npm`
     * `brew install node` (OSX)
-* Install [Git](https://git-scm.com/)
-    * `sudo apt-get install git`
-    * `brew install git` (OSX)
 
 ----
 
@@ -71,3 +68,4 @@ Write test in your editor
 * Wikipedia [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
 * Travis CI: [Link](https://travis-ci.org/)
 * Jenkins CI: [Link](http://jenkins-ci.org/)
+* Git: [Link](https://git-scm.com/)
