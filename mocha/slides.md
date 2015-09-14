@@ -35,16 +35,17 @@ Notes: For NCU Academy Program
 
 Write test in your editor
 
-<div style='margin: 0px auto; text-align: left; padding-left: 180px;'>
-<code>
-var assert = require("assert");<br/>
-var foo = 'bar'<br/>
-describe('First', function () {<br/>
-&nbsp;&nbsp;it('Test', function () {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;assert.equal(foo, 'bar')<br/>
-&nbsp;&nbsp;});<br/>
-});
-</code>
+<div style='margin: 0px auto; text-align: left; padding-left: 280px;'>
+``` javascript
+  // first test
+  var assert = require("assert");
+  var foo = 'bar';
+  describe('First', function () {
+    it('Test', function () {
+      assert.equal(foo, 'bar');
+    });
+  });
+```
 
 ----
 
