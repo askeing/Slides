@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Git Tips - Askeing</title>
+		<title>Slide - Askeing</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -13,9 +13,22 @@
 		<style>
 			code {color: Chartreuse;}
 		</style>
+		<script type="application/javascript">
+			function changeTitle() {
+				var h1 = window.document.querySelector('.slides section h1');
+				if (h1 === undefined) {
+					console.log('Can not found h1 tag in slides.');
+				} else {
+					var titleText = h1.textContent;
+					console.log('Change title: ' + titleText);
+					var titleTag = window.document.getElementsByTagName('title')[0];
+					titleTag.textContent = titleText;
+				}
+			}
+		</script>
 	</head>
 
-	<body>
+	<body onload="changeTitle()">
 
 		<div class="reveal">
 
