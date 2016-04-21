@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Slide - Askeing</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../reveal-js/css/reveal.min.css">
+		<link rel="stylesheet" href="../reveal-js/css/theme/night.css" id="theme">
+		<style>
+			code {color: Chartreuse;}
+		</style>
+		<script type="application/javascript">
+			function changeTitle() {
+				var h1 = window.document.querySelector('.slides section h1');
+				if (h1 === undefined) {
+					console.log('Can not found h1 tag in slides.');
+				} else {
+					var titleText = h1.textContent;
+					console.log('Change title: ' + titleText);
+					var titleTag = window.document.getElementsByTagName('title')[0];
+					titleTag.textContent = titleText;
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="changeTitle()">
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section data-markdown='./slides.md' data-separator='^\n----\n$' data-vertical='^\n--\n$' data-notes='^Notes:'></section>
+
+			</div>
+
+		</div>
+
+		<script src="../reveal-js/lib/js/head.min.js"></script>
+		<script src="../reveal-js/js/reveal.min.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				transition: 'linear',
+				
+				dependencies: [
+					// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+					{ src: '../reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+					// Interpret Markdown in <section> elements
+					{ src: '../reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+					// Syntax highlight for <code> elements
+					{ src: '../reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+					// Zoom in and out with Alt+click
+					{ src: '../reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+					// MathJax
+					{ src: '../reveal-js/plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
