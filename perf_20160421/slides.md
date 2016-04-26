@@ -88,11 +88,11 @@ from domLoading to loadEventEnd
 
 Using this [profile](https://cleopatra.io/#report=40a1eeceab5d53575fd1254444b5da29549de3a7&filter=%5B%7B%22type%22%3A%22RangeSampleFilter%22,%22start%22%3A225708,%22end%22%3A229337%7D%5D&selection=0,1,260) as example.
 
-Finding the [`nsInputStreamPump::OnStateStop()`](https://dxr.mozilla.org/mozilla-central/source/netwerk/base/nsInputStreamPump.cpp#670)
+* [`nsInputStreamPump::OnStateStop`](https://dxr.mozilla.org/mozilla-central/source/netwerk/base/nsInputStreamPump.cpp#670)
+    * [`nsHttpChannel::OnStopRequest`](https://dxr.mozilla.org/mozilla-central/source/netwerk/protocol/http/nsHttpChannel.cpp#5979)
 
-And then [`nsHttpChannel::OnStopRequest()`](https://dxr.mozilla.org/mozilla-central/source/netwerk/protocol/http/nsHttpChannel.cpp#5979)
-
-They are under `network` module.
+* [`nsHtml5TreeOpExecutor::RunFlushLoop`](https://dxr.mozilla.org/mozilla-central/source/parser/html/nsHtml5TreeOpExecutor.cpp#344)
+    * [`nsJSUtils::EvaluateString`](https://dxr.mozilla.org/mozilla-central/source/dom/base/nsJSUtils.cpp#129)
 
 ----
 
