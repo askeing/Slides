@@ -1,0 +1,15 @@
+[
+	{
+        "url": "http[s]{0,1}:\\/\\/m\\.ltn\\.com\\.tw.*",
+        "url_type": "RegExp",
+        "action_type": "click",
+        "action_selector": "div#closeID"
+    },
+	{
+        "url": "http[s]{0,1}:\\/\\/m\\.ltn\\.com\\.tw.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div.B1.ad"
+    }
+]
+
