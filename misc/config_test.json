@@ -1,0 +1,62 @@
+[
+    {
+        "desc": "Full-Screen-Ad of http(s)://*.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/.*\\.ltn\\.com\\.tw\\/.*",
+        "url_type": "RegExp",
+        "action_type": "click",
+        "action_selector": "div#closeID",
+        "condition": "",
+        "condition_selector": "",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http(s)://m.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/m\\.ltn\\.com\\.tw\\/.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div.B1.ad",
+        "condition": "",
+        "condition_selector": "",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http(s)://m.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/.*\\.ltn\\.com\\.tw\\/.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div.ad",
+        "condition": "",
+        "condition_selector": "",
+        "retry_second": "60"
+    },
+    {
+        "desc": "FB-btn of http(s)://*.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/.*\\.ltn\\.com\\.tw\\/.*",
+        "url_type": "RegExp",
+        "action_type": "click",
+        "action_selector": "div.fb_btn",
+        "condition": "is_display_block",
+        "condition_selector": "div.fb_mask",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Full-Screen-Ad of http(s)://www.setn.com/m/",
+        "url": "http[s]{0,1}:\\/\\/www\\.setn\\.com\\/m\\/.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div#float_ad",
+        "condition": "is_display_block",
+        "condition_selector": "div#float_ad",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http(s)://www.setn.com/m/",
+        "url": "http[s]{0,1}:\\/\\/www\\.setn\\.com\\/m\\/.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div#fb-root ~ div",
+        "condition": "has_obj",
+        "condition_selector": "div#fb-root ~ div",
+        "retry_second": "60"
+    }
+]
