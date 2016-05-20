@@ -37,7 +37,7 @@
         "action_selector": "div.fb_btn",
         "condition": "is_display_block",
         "condition_selector": "div.fb_mask",
-        "retry_second": "60"
+        "retry_second": "300"
     },
     {
         "desc": "Full-Screen-Ad of http(s)://www.setn.com/m/",
