@@ -52,5 +52,5 @@
         "action_selector": "div#fb-root ~ div",
         "condition": "document.querySelector('div#fb-root ~ div') != null",
         "retry_second": "60"
-    },
+    }
 ]
