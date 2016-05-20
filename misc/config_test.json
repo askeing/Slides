@@ -60,13 +60,23 @@
         "retry_second": "60"
     },
     {
-        "desc": "Top-Ad-on-Page of http://m.nownews.com/",
+        "desc": "Full-Screen-Ad of http://m.nownews.com/",
         "url": "http://m.nownews.com/*",
         "url_type": "String ",
         "action_type": "click",
-        "action_selector": "span.ui-btn-inner",
+        "action_selector": "a#full_ad_click",
         "condition": "is_display_visible",
         "condition_selector": "div#full_ad",
+        "retry_second": "60"
+    },
+        {
+        "desc": "Top-Ad-on-Page of http://m.nownews.com/",
+        "url": "http://m.nownews.com/*",
+        "url_type": "String ",
+        "action_type": "hide",
+        "action_selector": "div#google_image_div",
+        "condition": "has_obj",
+        "condition_selector": "div#google_image_div",
         "retry_second": "60"
     }
 ]
