@@ -1,15 +1,47 @@
 [
-	{
-        "url": "http[s]{0,1}:\\/\\/m\\.ltn\\.com\\.tw.*",
+    {
+        "desc": "Full-Screen-Ad of http(s)://*.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/.*\\.ltn\\.com\\.tw\\/.*",
         "url_type": "RegExp",
         "action_type": "click",
-        "action_selector": "div#closeID"
+        "action_selector": "div#closeID",
+        "condition": "true",
+        "retry_second": "60"
     },
-	{
-        "url": "http[s]{0,1}:\\/\\/m\\.ltn\\.com\\.tw.*",
+    {
+        "desc": "Top-Ad-on-Page of http(s)://m.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/m\\.ltn\\.com\\.tw\\/.*",
         "url_type": "RegExp",
         "action_type": "hide",
-        "action_selector": "div.B1.ad"
-    }
+        "action_selector": "div.B1.ad",
+        "condition": "true",
+        "retry_second": "60"
+    },
+    {
+        "desc": "FB-btn of http(s)://*.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/.*\\.ltn\\.com\\.tw\\/.*",
+        "url_type": "RegExp",
+        "action_type": "click",
+        "action_selector": "div.fb_btn",
+        "condition": "document.querySelector('div.fb_mask').style.getPropertyValue('display') == 'block'",
+        "retry_second": "0"
+    },
+    {
+        "desc": "Full-Screen-Ad of http(s)://www.setn.com/m/",
+        "url": "http[s]{0,1}:\\/\\/www\\.setn\\.com\\/m\\/.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div#float_ad",
+        "condition": "document.querySelector('div#float_ad').style.getPropertyValue('display') == 'block'",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http(s)://www.setn.com/m/",
+        "url": "http[s]{0,1}:\\/\\/www\\.setn\\.com\\/m\\/.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div#fb-root ~ div",
+        "condition": "document.querySelector('div#fb-root ~ div').style.getPropertyValue('display') == 'block'",
+        "retry_second": "60"
+    },
 ]
-
