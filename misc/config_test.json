@@ -58,5 +58,15 @@
         "condition": "has_obj",
         "condition_selector": "div#fb-root ~ div",
         "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http://m.nownews.com/",
+        "url": "http://m.nownews.com/*",
+        "url_type": "String ",
+        "action_type": "click",
+        "action_selector": "span.ui-btn-inner",
+        "condition": "is_display_visible",
+        "condition_selector": "div#full_ad",
+        "retry_second": "60"
     }
 ]
