@@ -33,7 +33,7 @@
         "action_type": "click",
         "action_selector": "div.fb_btn",
         "condition": "document.querySelector('div.fb_mask') != null && document.querySelector('div.fb_mask').style.getPropertyValue('display') == 'block'",
-        "retry_second": "60"
+        "retry_second": "300"
     },
     {
         "desc": "Full-Screen-Ad of http(s)://www.setn.com/m/",
