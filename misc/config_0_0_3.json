@@ -69,7 +69,7 @@
         "condition_selector": "div#full_ad",
         "retry_second": "60"
     },
-        {
+    {
         "desc": "Top-Ad-on-Page of http://m.nownews.com/",
         "url": "http://m.nownews.com/*",
         "url_type": "String ",
@@ -77,6 +77,26 @@
         "action_selector": "div[id^=div-gpt-ad-]",
         "condition": "has_obj",
         "condition_selector": "div[id^=div-gpt-ad-]",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Full-Screen-Ad of http://m.mobile01.com/",
+        "url": "http://m.mobile01.com/*",
+        "url_type": "String ",
+        "action_type": "click",
+        "action_selector": "div#ad_fullscreen div#ad-close",
+        "condition": "has_obj",
+        "condition_selector": "div#ad_fullscreen",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http://m.mobile01.com/",
+        "url": "http://m.mobile01.com/*",
+        "url_type": "String ",
+        "action_type": "hide",
+        "action_selector": "div[id^=ad] div[id^=ad_]",
+        "condition": "has_obj",
+        "condition_selector": "div[id^=ad] div[id^=ad_]",
         "retry_second": "60"
     }
 ]
