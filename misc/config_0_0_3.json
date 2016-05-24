@@ -46,7 +46,7 @@
         "action_type": "hide",
         "action_selector": "div#door-bottom",
         "condition": "has_obj",
-        "condition_selector": "div#door-bottom",
+        "condition_selector": "div#door-bottom iframe",
         "retry_second": "60"
     },
     {
