@@ -1,5 +1,15 @@
 [
     {
+        "desc": "div-gpt-ad of *",
+        "url": "*",
+        "url_type": "String ",
+        "action_type": "hide",
+        "action_selector": "div[id^=div-gpt-ad-]",
+        "condition": "has_obj",
+        "condition_selector": "div[id^=div-gpt-ad-]",
+        "retry_second": "60"
+    },
+    {
         "desc": "Full-Screen-Ad of http(s)://*.ltn.com.tw/",
         "url": "http[s]{0,1}:\\/\\/.*\\.ltn\\.com\\.tw\\/.*",
         "url_type": "RegExp",
@@ -67,16 +77,6 @@
         "action_selector": "a#full_ad_click",
         "condition": "is_display_visible",
         "condition_selector": "div#full_ad",
-        "retry_second": "60"
-    },
-    {
-        "desc": "Top-Ad-on-Page of http://m.nownews.com/",
-        "url": "http://m.nownews.com/*",
-        "url_type": "String ",
-        "action_type": "hide",
-        "action_selector": "div[id^=div-gpt-ad-]",
-        "condition": "has_obj",
-        "condition_selector": "div[id^=div-gpt-ad-]",
         "retry_second": "60"
     },
     {
