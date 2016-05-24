@@ -98,5 +98,35 @@
         "condition": "has_obj",
         "condition_selector": "div[id^=ad] div[id^=ad_]",
         "retry_second": "60"
+    },
+    {
+        "desc": "Full-Screen-Ad of http://*.pixnet.net/",
+        "url": "*.pixnet.com",
+        "url_type": "String ",
+        "action_type": "click",
+        "action_selector": "div.pop-ad-cover a.close",
+        "condition": "has_obj",
+        "condition_selector": "div.pop-ad-cover a.close",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http://*.pixnet.net/",
+        "url": "*.pixnet.com",
+        "url_type": "String ",
+        "action_type": "hide",
+        "action_selector": "div.header-ad",
+        "condition": "has_obj",
+        "condition_selector": "div.header-ad",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Read all of http://*.pixnet.net/",
+        "url": "*.pixnet.com",
+        "url_type": "String ",
+        "action_type": "click",
+        "action_selector": "div#read-all a",
+        "condition": "has_obj",
+        "condition_selector": "div#read-all",
+        "retry_second": "60"
     }
 ]
