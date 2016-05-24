@@ -148,7 +148,7 @@
         "condition": "has_obj",
         "condition_selector": "div#ArticleBanner",
         "retry_second": "60"
-    }
+    },
     {
         "desc": "Full-screen Ad of http://*.ettoday.net/",
         "url": "*.ettoday.net",
