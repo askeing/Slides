@@ -31,12 +31,22 @@
     },
     {
         "desc": "Top-Ad-on-Page of http(s)://m.ltn.com.tw/",
+        "url": "http[s]{0,1}:\\/\\/m\\.ltn\\.com\\.tw\\/.*",
+        "url_type": "RegExp",
+        "action_type": "hide",
+        "action_selector": "div.B1.ad",
+        "condition": "",
+        "condition_selector": "",
+        "retry_second": "60"
+    },
+    {
+        "desc": "bottom-Ad-on-Page of http(s)://m.ltn.com.tw/",
         "url": "http[s]{0,1}:\\/\\/.*\\.ltn\\.com\\.tw\\/.*",
         "url_type": "RegExp",
         "action_type": "hide",
-        "action_selector": "div.ad",
-        "condition": "",
-        "condition_selector": "",
+        "action_selector": "div#door-bottom",
+        "condition": "has_obj",
+        "condition_selector": "div#door-bottom",
         "retry_second": "60"
     },
     {
