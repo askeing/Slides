@@ -124,9 +124,49 @@
         "url": "*.pixnet.net",
         "url_type": "String ",
         "action_type": "click",
-        "action_selector": "div#read-all a",
+        "action_selector": "div#read-all span",
         "condition": "has_obj",
-        "condition_selector": "div#read-all",
+        "condition_selector": "div#read-all span",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Full-Screen-Ad of http://*.appledaily.com.tw/",
+        "url": "*.appledaily.com.tw",
+        "url_type": "String ",
+        "action_type": "hide",
+        "action_selector": "div.splash",
+        "condition": "has_obj",
+        "condition_selector": "div.splash",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http://*.appledaily.com.tw/",
+        "url": "*.appledaily.com.tw",
+        "url_type": "String ",
+        "action_type": "hide",
+        "action_selector": "div#ArticleBanner",
+        "condition": "has_obj",
+        "condition_selector": "div#ArticleBanner",
+        "retry_second": "60"
+    }
+    {
+        "desc": "Full-screen Ad of http://*.ettoday.net/",
+        "url": "*.ettoday.net",
+        "url_type": "String ",
+        "action_type": "click",
+        "action_selector": "div.adM01 div.btn_close",
+        "condition": "is_display_block",
+        "condition_selector": "div.adM01",
+        "retry_second": "60"
+    },
+    {
+        "desc": "Top-Ad-on-Page of http://*.ettoday.net/",
+        "url": "*.ettoday.net",
+        "url_type": "String ",
+        "action_type": "hide",
+        "action_selector": "div.ad_320x50",
+        "condition": "has_obj",
+        "condition_selector": "div.ad_320x50",
         "retry_second": "60"
     }
 ]
