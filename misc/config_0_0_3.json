@@ -101,7 +101,7 @@
     },
     {
         "desc": "Full-Screen-Ad of http://*.pixnet.net/",
-        "url": "*.pixnet.com",
+        "url": "*.pixnet.net",
         "url_type": "String ",
         "action_type": "click",
         "action_selector": "div.pop-ad-cover a.close",
@@ -111,7 +111,7 @@
     },
     {
         "desc": "Top-Ad-on-Page of http://*.pixnet.net/",
-        "url": "*.pixnet.com",
+        "url": "*.pixnet.net",
         "url_type": "String ",
         "action_type": "hide",
         "action_selector": "div.header-ad",
@@ -121,7 +121,7 @@
     },
     {
         "desc": "Read all of http://*.pixnet.net/",
-        "url": "*.pixnet.com",
+        "url": "*.pixnet.net",
         "url_type": "String ",
         "action_type": "click",
         "action_selector": "div#read-all a",
