@@ -11,7 +11,7 @@
   - Reference work
     - 2015 Academy Program in National Central University [wiki page](https://wiki.mozilla.org/Firefox_OS/AcademyNCU2015) & [repo](https://github.com/MAP-NCU2015/Lesson-04-Testing)
 
-- [Find Performance Problems](http://askeing.github.io/Slides/perf_20160421/) ()
+- [Find Performance Problems](http://askeing.github.io/Slides/perf_20160421/)
   - Speaker
     - [Askeing](https://github.com/askeing)
   - Reference work
