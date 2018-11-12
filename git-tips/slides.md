@@ -338,20 +338,6 @@ For the patches which creating by "format-patch", please apply them by "am" comm
 
 ----
 
-# Prompt
-
---
-
-## For Bash
-
-1. Download this [script](https://gist.github.com/tung/409780)
-2. Modify your `~/.bashrc` to source this script
-
-<br/>
-<div class="fragment"><span style="color: Blue;">[</span><span style="color: Orange;">askeing@askeing-ubuntu</span> <span style="color: Red;">~/workspace/B2G-flash-tool</span> <span style="color: Green;">(master)</span><span style="color: Orange;">↑</span><span style="color: Blue;">]</span><span style="color: Green;">$</span>_ </div>
-
-----
-
 # Github
 
 --
@@ -392,6 +378,20 @@ Notes: The `git push {remote-name} {local-branch}:{branch-name}` will push the {
   * Then run `git pr mozilla 99` for fetching PR 99 from mozilla repo.
 
 Notes: It will fetch the HEAD of pull request base on ID from remote repository, and create the new branch. Then we can switch to this branch.
+
+----
+
+# Prompt
+
+--
+
+## For Bash
+
+1. Download this [script](https://gist.github.com/tung/409780)
+2. Modify your `~/.bashrc` to source this script
+
+<br/>
+<div class="fragment"><span style="color: Blue;">[</span><span style="color: Orange;">askeing@askeing-ubuntu</span> <span style="color: Red;">~/workspace/B2G-flash-tool</span> <span style="color: Green;">(master)</span><span style="color: Orange;">↑</span><span style="color: Blue;">]</span><span style="color: Green;">$</span>_ </div>
 
 ----
 
